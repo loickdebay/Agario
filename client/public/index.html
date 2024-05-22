@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<title>AgarBof</title>
+<head>
+	<section class="titleStyle">
+		<h1 class="text-shadow"> -- AgarBof -- </h1>
+		<div class="tags">
+			<p class="text-shadow"><small>Loïck Debay - Younes Chahid</small></p>
+		</div>
+	</section>
+<h1 class="closure"></h1>
+	<div class="popup-container">
+		<div class="popup">
+			
+		  <h2>Entrez votre nom d'utilisateur :</h2>
+		  <input type="text" id="username-input">
+		  <button id="start-button">Commencer la partie</button>
+		  <button id="popup-button">Crédits</button>
+
+		</div>
+	</div>
+	
+	<section class="content">
+		<table class="scoresContainer">
+			<thead>
+				<tr>
+				  <th>Rank</th>
+				  <th>Score</th>
+				  <th>Name</th>
+				</tr>
+			  </thead>
+				
+			  </table>
+	
+	</section>
+	
+	  
+	  
+	<p>
+	  </p>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/main.css" />
+	<style>
+		canvas {
+			background-color: rgb(255, 255, 255);
+			border:black 5px solid;
+		}
+	</style>
+	<script src="build/main.bundle.js" defer></script>
+</head>
+<body>
+
+
+
+	<div class="popup-credits" style="display: none;">
+		<table class="table-credits" >
+			<thead>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<th><img src="images/Pacman.png" width="=150px" height="150px"></th>
+				<th></th>
+				<th><img src="images/Lucina.webp" width="=150px" height="150px"></th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<td><h1>Loïck Debay</h1></td>
+				<td></td>
+				<td><h1>Younes Chahid</h1></td>
+			  </tr>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<td>Sori</td>
+				<td>Surnom</td>
+				<td>Skynet</td>
+			  </tr>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<td>100%</td>
+				<td>Echelle de participation</td>
+				<td>100%</td>
+			  </tr>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<td></td>
+				<td>Jeux préférés </td>
+				<td></td>
+			  </tr>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<td>Monster Hunter World</td>
+				<td> </td>
+				<td>Scarlet Nexus</td>
+			  </tr>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<td>Persona 5</td>
+				<td> </td>
+				<td>Naraka: Bladepoint</td>
+			  </tr>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<td></td>
+				<td>commun </td>
+				<td></td>
+			  </tr>
+			  <tr onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley'">
+				<td></td>
+				<td><img src="images/SmashUltimateLogo.png" width="=150px" height="150px"></td>
+				<td></td>
+			  </tr>
+			  <tr>
+				<td></td>
+				<td> <button class="close-button">Fermer</button></td>
+				<td></td>
+			  </tr>
+			 
+			</tbody>
+		  </table>	  
+		
+	</div>
+
+	<div id="end-screen" class="screen" style="display: none">
+		<h1>Game Over</h1>
+		<p id="end-player-name"></p>
+		<p id="timeLived"></p>
+		<p id="end-player-size">Votre score final était de <p class="playerScore"></p></p>
+		<button id="restart-button">Restart</button>
+	</div>
+	<canvas class="gameCanvas" width="2500" height="1200"></canvas>
+</body>
+</html>

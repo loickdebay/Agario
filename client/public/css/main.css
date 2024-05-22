@@ -1,0 +1,240 @@
+body {
+	margin: 0;
+	overflow:hidden;
+background-color: black;
+  }
+  canvas {
+	width: 100%;
+	height: 100%;
+	background: white;
+  }
+  .popup-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  .popup {
+	background-color: black;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	color:white;
+  }
+  
+  .popup h2 {
+	margin-top: 0;
+  }
+  
+  .popup input {
+	display: block;
+	margin: 10px auto;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+  }
+  
+  .popup button {
+	display: block;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	cursor: pointer;
+  }
+  #end-screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  #end-player-name {
+	font-weight: bold;
+  }
+  
+  #restart-button {
+	margin-top: 2rem;
+	padding: 1rem 2rem;
+	background-color: #007bff;
+	color: black;
+	font-size: 1.5rem;
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
+  }
+
+  .close-button {
+	margin-top: 2rem;
+	padding: 1rem 2rem;
+	background-color: white;
+	color: black;
+	font-size: 1.5rem;
+	border: none;
+	border-radius: 1rem;
+	cursor: pointer;
+  }
+
+  
+  .scoresContainer {
+	position:absolute;
+	margin-top: 30px;
+	right: 0;
+	width: 200px;
+	height: 300px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color:white;
+	overflow: hidden;
+	font-size: x-large;
+	border: 2px solid white;
+	border-radius: 10px;
+	box-shadow: 0 0 5px white;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+  }
+  
+  .scoresContainer th {
+	border-bottom: 2px solid white;
+	padding: 10px;
+  }
+  
+  .scoresContainer td {
+	padding: 5px 10px;
+  }
+  
+  .scoresContainer tr:nth-child(even) {
+	background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .scoresContainer tr:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+  }
+
+ .popup-credits {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+	height: 80%;
+	padding: 20px;
+	z-index: 999;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url(../images/FD.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+}
+.table-credits{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+	height: 50%;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.titleStyle {
+	position: absolute;
+	z-index: 1;
+	background: transparent;
+	color: #fff;
+	text-transform: uppercase;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	font-size: xx-large;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	pointer-events: none;
+}
+
+
+#text-shadow {
+  font-size: 2.5em;
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.3em;
+  }
+}
+
+.text-shadow {
+  font-style: italic;
+  text-transform: uppercase;
+  color: transparent;
+  -webkit-text-stroke: #fff;
+  -webkit-text-stroke-width: 1px;
+  text-shadow: 2px 2px 10px #2962ff;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+  letter-spacing: 0.2em;
+  -webkit-animation: flicker 0.5s ease-in-out infinite alternate;
+          animation: flicker 0.5s ease-in-out infinite alternate;
+}
+.text-shadow:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .tags small {
+    font-size: 0.5em;
+  }
+}
+
+@-webkit-keyframes flicker {
+  0% {
+    opacity: 0.5;
+    text-shadow: 2px 2px 10px #2962ff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px #2962ff;
+  }
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 0.5;
+    text-shadow: 2px 2px 10px #2962ff;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 2px 2px 20px #2962ff;
+  }
+}
